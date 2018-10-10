@@ -2,10 +2,6 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -15,32 +11,42 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
+        ],
+        "files": [
+          "**/*.md",
+          "**/*.yml"
         ]
       }
     ],
+    "dest": "winnlocaletest",
+    "externalReference": [],
+    "fileMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/winnlocaletest/breadcrumb/toc.json",
+      "extendBreadcrumb": true
+    },
+    "groups": {
+      "g1": {
+        "dest": "d1",
+        "moniker_range": "m1"
+      }
+    },
+    "markdownEngineName": "markdig",
+    "overwrite": [],
     "resource": [
       {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**"
+        ],
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/winnlocaletest/breadcrumb/toc.json",
-      "extendBreadcrumb": true
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "winnlocaletest",
-    "markdownEngineName": "markdig"
+    "template": []
   }
 }
